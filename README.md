@@ -1,7 +1,7 @@
 # Личный проект «Кэт энержи»
 
 * Студент: [Евгений](https://github.com/Evgen1605/cat-energy).
-* Наставник: `Александр Першин`(https://htmlacademy.ru).
+* Наставник: [`Александр Першин`](https://htmlacademy.ru).
 
 ---
 
