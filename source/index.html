@@ -10,12 +10,12 @@
 </head>
 
 <body class="page__body">
-  <div class="container">
 
-    <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <img class="main__logo-img" src="#" alt="Лого" width="33" height="38">
-        <img class="main__logo-text" src="#" alt="cat energy" width="101" height="18">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo logo" href="#">
+        <img class="main-header__logo-img logo-img" src="#" alt="Лого" width="33" height="38">
+        <img class="main-header__logo-text logo-text" src="#" alt="cat energy" width="101" height="18">
       </a>
 
       <nav class="main-nav">
@@ -34,22 +34,25 @@
           </li>
         </ul>
       </nav>
+    </div>
+  </header>
 
-    </header>
+  <main class="main-container">
 
-    <main>
-
-      <!-- Верхняя секция -->
-      <section class="slogan">
+    <!-- Верхняя секция -->
+    <section class="slogan">
+      <div class="slogan__wrapper">
         <h1 class="slogan__title title-h1">Функциональное
           питание для котов</h1>
         <p class="slogan__description">Занялся собой? Займись котом!</p>
         <img class="slogan__image" src="#" alt="упаковка кошачьего корма Cat Energy Pro со вкусом курицы." width="280" height="270">
         <a class="slogan__button button" href="#">подобрать программу</a>
-      </section>
+      </div>
+    </section>
 
-      <!-- Похудение и набор массы -->
-      <section class="features">
+    <!-- Похудение и набор массы -->
+    <section class="features">
+      <div class="features__wrapper">
         <div class="features__item">
           <h3 class="features__title title-h3">похудение</h3>
           <img class="features__image features__image--weight-loss" src="#" alt="" width="67" height="50">
@@ -63,10 +66,13 @@
           <p class="features__description main-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="features__button button" href="#">каталог pro</a>
         </div>
-      </section>
+      </div>
 
-      <!-- Как это работает -->
-      <section class="how-to-work">
+    </section>
+
+    <!-- Как это работает -->
+    <section class="how-to-work">
+      <div class="how-to-work__wrapper">
         <h2 class="how-to-work__title title-h2">Как это работает</h2>
         <ul class="how-to-work__list">
           <!-- 1 -->
@@ -96,57 +102,66 @@
             <p class="how-to-work__description main-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
-      </section>
+      </div>
 
-      <!-- Живой пример -->
-      <section class="example">
+    </section>
+
+    <!-- Живой пример -->
+    <section class="example">
+      <div class="example__wrapper">
         <h2 class="example__title title-h2">Живой пример</h2>
         <p class="example__description main-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
         <div class="example__info">
           <div class="example__weight">
-            <dt class="example__weight--value">5 КГ</dt>
-            <dd class="example__weight--label second-text">снижение веса</dd>
+            <span class="example__weight-value">5 КГ</span>
+            <span class="example__weight-label second-text">снижение веса</span>
           </div>
           <div class="example__duration">
-            <dt class="example__duration--value">60 ДНЕЙ</dt>
-            <dd class="example__duration--label second-text">затрачено времени</dd>
+            <span class="example__duration-value">60 ДНЕЙ</span>
+            <span class="example__duration-label second-text">затрачено времени</span>
           </div>
           <div class="example__prise">
-            <dt class="example__prise--label">Затраты на питание:</dt>
-            <dd class="example__prise--value">15 000 РУБ.</dd>
+            <span class="example__prise-label">Затраты на питание:</span>
+            <span class="example__prise-value">15 000 РУБ.</span>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- Карта -->
-      <section class="map">
-        <h2 class="visually-hidden">Карта</h2>
+    </section>
+
+    <!-- Карта -->
+    <section class="map">
+      <div class="map__wrapper">
+        <h2 class="visually-hispanen">Карта</h2>
         <div class="map__contacts">
-          <p class="map__contacts--title third-text">приглашаем к сотрудничеству дилеров!</p>
-          <p class="map__contacts--adress main-text">ул. Большая<br>
+          <p class="map__contacts-title third-text">приглашаем к сотрудничеству дилеров!</p>
+          <p class="map__contacts-adress main-text">ул. Большая<br>
             Конюшенная, д. 19/8<br>
             Санкт-Петербург</p>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <!-- footer -->
-    <footer class="main-footer">
+  </main>
+
+  <!-- footer -->
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
       <div class="main-footer__logo">
-        <img class="main__logo-text" src="#" alt="cat energy" width="128" height="24">
+        <img class="main-footer__logo-text logo-text" src="#" alt="cat energy" width="128" height="24">
       </div>
 
       <div class="main-footer__social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <ul class="main-footer__social-list">
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link social-link-vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link social-link-telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
           </li>
         </ul>
       </div>
@@ -157,9 +172,10 @@
           <img src="#" alt="Лого академии" width="27" height="24">
         </a>
       </div>
-    </footer>
+    </div>
 
-  </div>
+  </footer>
+
 </body>
 
 </html>
