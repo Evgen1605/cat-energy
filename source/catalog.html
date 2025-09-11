@@ -6,6 +6,20 @@
   <title>Кэт энержи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons//apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons//apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons//apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons//apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons//apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons//apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons//apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons//apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons//apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicons//android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons//favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons//favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -13,9 +27,14 @@
 
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo logo" href="#">
-        <img class="main-header__logo-img logo-img" src="#" alt="Лого" width="33" height="38">
-        <img class="main-header__logo-text logo-text" src="#" alt="cat energy" width="101" height="18">
+      <a class="main-header__logo logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="../images/logo-desctop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="../images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class="main-header__logo-img logo-img" src="../images/logo-mobile.svg" alt="Лого" width="33" height="38">
+        </picture>
+
+        <img class="main-header__logo-text logo-text" src="../images/logo-text.svg" alt="cat energy" width="101" height="18">
       </a>
 
       <nav class="main-nav">
@@ -48,7 +67,9 @@
           <!-- 1 -->
           <li class="products__item">
             <h3 class="products__title title-h3">Cat Energy PRO 500 г</h3>
-            <img class="products__image" src="#" alt="упаковка кошачьего корма Cat Energy" width="161" height="172">
+            <picture>
+              <img class="products__image products__image--small" src="../images/catalog-1@1x.png" srcset="../images/catalog-1@2x.png 2x" alt="упаковка кошачьего корма Cat Energy" width="68" height="86">
+            </picture>
             <div class="products__info">
               <div class="products__weight">
                 <span class="products__weight-label fourth-text">Масса</span>
@@ -69,7 +90,7 @@
           <!-- 2 -->
           <li class="products__item">
             <h3 class="products__title title-h3">Cat Energy PRO 1000 г</h3>
-            <img class="products__image" src="#" alt="упаковка кошачьего корма Cat Energy" width="161" height="172">
+            <img class="products__image products__image--big" src="../images/catalog-2@1x.png" srcset="../images/catalog-2@2x.png 2x" alt="упаковка кошачьего корма Cat Energy" width="84" height="100">
             <div class="products__info">
               <div class="products__weight">
                 <span class="products__weight-label fourth-text">Масса</span>
@@ -90,7 +111,7 @@
           <!-- 3 -->
           <li class="products__item">
             <h3 class="products__title title-h3">Cat Energy PRO 500 г</h3>
-            <img class="products__image" src="#" alt="упаковка кошачьего корма Cat Energy" width="161" height="172">
+            <img class="products__image products__image--small" src="../images/catalog-3@1x.png" srcset="../images/catalog-3@2x.png" alt="упаковка кошачьего корма Cat Energy" width="68" height="86">
             <div class="products__info">
               <div class="products__weight">
                 <span class="products__weight-label fourth-text">Масса</span>
@@ -111,7 +132,7 @@
           <!-- 4 -->
           <li class="products__item">
             <h3 class="products__title title-h3">Cat Energy PRO 1000 г</h3>
-            <img class="products__image" src="#" alt="упаковка кошачьего корма Cat Energy" width="161" height="172">
+            <img class="products__image" src="../images/catalog-4@1x.png" srcset="source/images/catalog-4@2x.png 2x" alt="упаковка кошачьего корма Cat Energy" width="84" height="100">
             <div class="products__info">
               <div class="products__weight">
                 <span class="products__weight-label fourth-text">Масса</span>
@@ -132,7 +153,7 @@
           <!-- 5 -->
           <li class="products__item">
             <h3 class="products__title title-h3">Cat Energy slim 500 г</h3>
-            <img class="products__image" src="#" alt="упаковка кошачьего корма Cat Energy" width="161" height="172">
+            <img class="products__image" src="../images/catalog-5@1x.png" srcset="../images/catalog-5@2x.png 2x" alt="упаковка кошачьего корма Cat Energy" width="68" height="86">
             <div class="products__info">
               <div class="products__weight">
                 <span class="products__weight-label fourth-text">Масса</span>
@@ -153,7 +174,7 @@
           <!-- 6 -->
           <li class="products__item">
             <h3 class="products__title title-h3">Cat Energy slim 1000 г</h3>
-            <img class="products__image" src="#" alt="упаковка кошачьего корма Cat Energy" width="161" height="172">
+            <img class="products__image" src="../images/catalog-6@1x.png" srcset="../images/catalog-6@2x.png 2x" alt="упаковка кошачьего корма Cat Energy" width="84" height="100">
             <div class="products__info">
               <div class="products__weight">
                 <span class="products__weight-label fourth-text">Масса</span>
@@ -174,7 +195,7 @@
           <!-- 7 -->
           <li class="products__item">
             <h3 class="products__title title-h3">Cat Energy SLIM 500 г</h3>
-            <img class="products__image" src="#" alt="упаковка кошачьего корма Cat Energy" width="161" height="172">
+            <img class="products__image" src="../images/catalog-7@1x.png" srcset="../images/catalog-7@2x.png" alt="упаковка кошачьего корма Cat Energy" width="72" height="84">
             <div class="products__info">
               <div class="products__weight">
                 <span class="products__weight-label fourth-text">Масса</span>
@@ -247,7 +268,7 @@
         </ul>
 
         <div class="present">
-          <img class="present__logo" src="#" alt="" width="78" height="80">
+          <img class="present__logo" src="../icons/present.svg" alt="" width="78" height="80">
           <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </div>
@@ -273,7 +294,7 @@
     <!-- Карта -->
     <section class="map">
       <div class="map__wrapper">
-        <h2 class="visually-hidden">Карта</h2>
+        <h2 class="visually-hispanen">Карта</h2>
         <div class="map__contacts">
           <p class="map__contacts-title third-text">приглашаем к сотрудничеству дилеров!</p>
           <p class="map__contacts-adress main-text">ул. Большая<br>
@@ -281,6 +302,11 @@
             Санкт-Петербург</p>
         </div>
       </div>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="../images/Map@1x.jpg 1x, ../images/Map@2x.jpg 2x" type="image/jpg" width="1440" height="400">
+        <source media="(min-width: 768px)" srcset="../images/Map-tablet@1x.jpg 1x, ../images/Map-tablet@2x.webp 2x" type="image/jpg" width="768" height="400">
+        <img src="../images/Map-mobil@1x.jpg" srcset="../images/Map-mobil@2x.jpg 2x" alt="Карта" width="320" height="362">
+      </picture>
     </section>
 
   </main>
@@ -289,19 +315,25 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__logo">
-        <img class="main-footer__logo-text logo-text" src="#" alt="cat energy" width="128" height="24">
+        <img class="main-footer__logo-text logo-text" src="../images/logo-text.svg" alt="cat energy" width="128" height="24">
       </div>
 
       <div class="main-footer__social">
         <ul class="main-footer__social-list">
           <li class="main-footer__social-item">
-            <a class="main-footer__social-link social-link-vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="main-footer__social-link social-link-vkontakte" href="https://vk.com/htmlacademy">
+              <img src="../icons/vkontakte.svg" alt="Мы в Вконтакте" width="28" height="22">
+            </a>
           </li>
           <li class="main-footer__social-item">
-            <a class="main-footer__social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+            <a class="main-footer__social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <img src="../icons/youtube.svg" alt="Мы в Ютубе" width="28" height="22">
+            </a>
           </li>
           <li class="main-footer__social-item">
-            <a class="main-footer__social-link social-link-telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            <a class="main-footer__social-link social-link-telegram" href="https://t.me/htmlacademy">
+              <img src="../icons/telegram.svg" alt="Мы в Телеграме" width="28" height="22">
+            </a>
           </li>
         </ul>
       </div>
@@ -309,7 +341,7 @@
       <div class="main-footer__copyraight copyraight">
         <p class="copyraight__text">HTML Academy</p>
         <a class="copyraight__link" href="#">
-          <img src="#" alt="Лого академии" width="27" height="24">
+          <img src="../icons/logo_html-academy.svg" alt="Лого академии" width="27" height="24">
         </a>
       </div>
     </div>
