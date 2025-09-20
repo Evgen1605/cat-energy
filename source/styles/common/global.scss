@@ -1,1 +1,70 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  background-color: $primary-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.button {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  text-align: center;
+  color: $primary-color;
+  padding: 10px;
+  background-color: $basic_green;
+  border: none;
+}
+
+.title-h1 {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+}
+
+.title-h2 {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.title-h3 {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.fourth-text {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: $special_dark-grey;
+}
