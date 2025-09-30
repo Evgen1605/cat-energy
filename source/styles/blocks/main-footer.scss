@@ -1,0 +1,63 @@
+.main-footer {
+  background-color: $basic_grey;
+
+  .main-footer__wrapper {
+    padding: 40px 20px;
+  }
+
+  .copyraight__text {
+    @include base-font($primary-font, 400, 16px, 125%, none);
+    color: $basic-text;
+  }
+
+  .main-footer__social-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .main-footer__social-link {
+    display: block;
+    width: 27px;
+    height: 17px;
+    background-color: $special_grey-1;
+
+    &:hover {
+      background-color: $accent-color;
+    }
+
+    &:active {
+      background-color: $accent-color;
+      opacity: 0.3;
+    }
+  }
+
+  .social-link-vkontakte {
+    mask: url("../../icons/stack.svg#vkontakte") no-repeat center;
+  }
+
+  .social-link-youtube {
+    mask: url("../../icons/stack.svg#youtube") no-repeat center;
+  }
+
+  .social-link-telegram {
+    mask: url("../../icons/stack.svg#telegram") no-repeat center;
+  }
+
+  .copyraight__link {
+    mask: url("../../icons/stack.svg#logo_html-academy");
+    display: block;
+    width: 27px;
+    height: 24px;
+    background-color: $special_grey-1;
+
+    &:hover {
+      background-color: $accent-color;
+    }
+
+    &:active {
+      background-color: $accent-color;
+      opacity: 0.3;
+    }
+  }
+}

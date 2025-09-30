@@ -1,0 +1,23 @@
+.features {
+  .features__wrapper {
+    padding: 0 20px;
+  }
+
+  .features__item {
+    background-color: $basic_grey;
+    padding: 20px;
+  }
+
+  .features__title {
+    color: $basic-black;
+  }
+
+  .features__description {
+    color: $basic-text;
+  }
+
+  .features__button {
+    @include base-font($secondary-font, 400, 16px, 100%, uppercase);
+    color: $basic-black;
+  }
+}

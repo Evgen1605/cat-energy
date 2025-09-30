@@ -1,0 +1,9 @@
+.promotions {
+  .promotions__wrapper {
+    padding: 0 20px 40px;
+  }
+
+  .promotions__description {
+    @include base-font($secondary-font, 400, 16px, 150%, none);
+  }
+}

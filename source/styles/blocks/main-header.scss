@@ -1,0 +1,18 @@
+.main-header {
+  background-color: $basic-white;
+
+  .main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .main-nav__item a {
+    @include base-font($secondary-font, 400, 20px, 100%, uppercase);
+    color: $basic-black;
+  }
+}
+
+.main-header__wrapper {
+  padding: 13px 20px;
+}

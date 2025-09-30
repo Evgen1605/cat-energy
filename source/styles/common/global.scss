@@ -1,19 +1,17 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 
 body {
+  @include base-font($primary-font, 400, 20px, 100%, none);
   margin: 0;
   padding: 0;
-  font-family: $primary-font;
-  font-size: 14px;
-  line-height: 18px;
-  color: $special_dark-grey;
-  background-color: $primary-color;
+  color: $basic-text;
+  background-color: $basic-white;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 a {
@@ -26,45 +24,49 @@ a {
   box-sizing: border-box;
 }
 
-.button {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 125%;
-  text-transform: uppercase;
-  text-align: center;
-  color: $primary-color;
-  padding: 10px;
-  background-color: $basic_green;
-  border: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
+
 .title-h1 {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 100%;
+  @include base-font($secondary-font, 400, 36px, 100%, none);
+}
+
+.index-title-h2 {
+  @include base-font($secondary-font, 400, 36px, 111%, none);
+}
+
+.index-title-h3 {
+  @include base-font($secondary-font, 400, 24px, 154%, uppercase);
 }
 
 .title-h2 {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 100%;
+  @include base-font($secondary-font, 400, 24px, 100%, none);
 }
 
 .title-h3 {
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 125%;
-  text-transform: uppercase;
+  @include base-font($primary-font, 400, 16px, 125%, uppercase);
+}
+
+.main-text {
+  @include base-font($primary-font, 400, 14px, 129%, none);
+}
+
+.second-text {
+  @include base-font($primary-font, 400, 12px, 100%, none);
 }
 
 .fourth-text {
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 133%;
-  color: $special_dark-grey;
+  @include base-font($primary-font, 400, 12px, 133%, none);
+  color: $basic-text;
 }
