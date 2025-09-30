@@ -1,0 +1,25 @@
+.products {
+  .products__wrapper {
+    padding: 6px 20px 26px;
+  }
+
+  .products__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .products__title-cards {
+    color: $basic-text-2;
+  }
+
+  .products__button {
+    min-width: 100%;
+  }
+
+  .show-all__button {
+    min-width: 100%;
+    background-color: $basic_grey;
+    color: inherit;
+  }
+}

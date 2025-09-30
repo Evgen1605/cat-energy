@@ -79,16 +79,28 @@
       <div class="features__wrapper">
         <div class="features__item">
           <h3 class="features__title index-title-h3">похудение</h3>
-          <img class="features__image features__image--weight-loss" src="icons/cat_back-lose.svg" alt="" width="67" height="50">
+          <svg class="features__image features__image--weight-loss" width="50" height="53">
+            <use href="../icons/stack.svg#cat_back-lose"></use>
+          </svg>
           <p class="features__description main-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="features__button" href="#">каталог slim</a>
+          <a class="features__button" href="#">каталог slim
+            <svg class="features__button--icon" width="24" height="12">
+              <use href="../icons/stack.svg#icon_arrow-right"></use>
+            </svg>
+          </a>
         </div>
 
         <div class="features__item">
           <h3 class="features__title index-title-h3">Набор массы</h3>
-          <img class="features__image features__image--weight-gain" src="icons/cat_back-weight-gain.svg" alt="" width="67" height="50">
+          <svg class="features__image features__image--weight-gain" width="67" height="50">
+            <use href="../icons/stack.svg#cat_back-weight-gain"></use>
+          </svg>
           <p class="features__description main-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="features__button" href="#">каталог pro</a>
+          <a class="features__button" href="#">каталог pro
+            <svg class="features__button--icon" width="24" height="12">
+              <use href="../icons/stack.svg#icon_arrow-right"></use>
+            </svg>
+          </a>
         </div>
       </div>
 
@@ -101,28 +113,44 @@
         <ul class="how-to-work__list">
           <!-- 1 -->
           <li class="how-to-work__item">
-            <img class="how-to-work__image" src="icons/leaf.svg" alt="" width="27" height="31">
+            <div class="how-to-work__image">
+              <svg width="27" height="31">
+                <use href="../icons/stack.svg#leaf"></use>
+              </svg>
+            </div>
             <p class="how-to-work__description main-text">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
           </li>
           <!-- 2 -->
           <li class="how-to-work__item">
-            <img class="how-to-work__image" src="icons/hot.svg" alt="" width="27" height="31">
+            <div class="how-to-work__image">
+              <svg width="27" height="31">
+                <use href="../icons/stack.svg#hot"></use>
+              </svg>
+            </div>
             <p class="how-to-work__description main-text">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
           </li>
           <!-- 3 -->
           <li class="how-to-work__item">
-            <img class="how-to-work__image" src="icons/icon_eat.svg" alt="" width="27" height="31">
+            <div class="how-to-work__image">
+              <svg width="27" height="31">
+                <use href="../icons/stack.svg#icon_eat"></use>
+              </svg>
+            </div>
             <p class="how-to-work__description main-text">Замените один-два приема
               обычной еды на наше
               функциональное питание.</p>
           </li>
           <!-- 4 -->
           <li class="how-to-work__item">
-            <img class="how-to-work__image" src="icons/clock.svg" alt="" width="27" height="31">
+            <div class="how-to-work__image">
+              <svg width="27" height="31">
+                <use href="../icons/stack.svg#clock"></use>
+              </svg>
+            </div>
             <p class="how-to-work__description main-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
@@ -167,7 +195,7 @@
     <!-- Карта -->
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts-title third-text">приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="contacts-title">приглашаем к сотрудничеству дилеров!</h2>
         <address class="contacts__adress">
           <p class="contacts__adress-text">ул. Большая Конюшенная, д. 19/8</p>
           <p class="contacts__adress-text">Санкт-Петербург</p>
@@ -176,7 +204,7 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="images/Map@1x.jpg 1x, images/Map@2x.jpg 2x" type="image/jpg" width="1440" height="400">
         <source media="(min-width: 768px)" srcset="images/Map-tablet@1x.jpg 1x, images/Map-tablet@2x.webp 2x" type="image/jpg" width="768" height="400">
-        <img src="images/Map-mobil@1x.jpg" srcset="images/Map-mobil@2x.jpg 2x" alt="Карта" width="320" height="362">
+        <img class="contacts-map" src="images/Map-mobil@1x.jpg" srcset="images/Map-mobil@2x.jpg 2x" alt="Карта" width="320" height="362">
       </picture>
     </section>
 
@@ -193,17 +221,17 @@
         <ul class="main-footer__social-list">
           <li class="main-footer__social-item">
             <a class="main-footer__social-link social-link-vkontakte" href="https://vk.com/htmlacademy">
-              <img src="icons/vkontakte.svg" alt="Мы в Вконтакте" width="28" height="22">
+              <span class="visually-hidden">Мы в контакте</span>
             </a>
           </li>
           <li class="main-footer__social-item">
             <a class="main-footer__social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="icons/youtube.svg" alt="Мы в Ютубе" width="28" height="22">
+              <span class="visually-hidden">Мы в Ютубе</span>
             </a>
           </li>
           <li class="main-footer__social-item">
             <a class="main-footer__social-link social-link-telegram" href="https://t.me/htmlacademy">
-              <img src="icons/telegram.svg" alt="Мы в Телеграме" width="28" height="22">
+              <span class="visually-hidden">Мы в Телеграме</span>
             </a>
           </li>
         </ul>
@@ -211,8 +239,8 @@
 
       <div class="main-footer__copyraight copyraight">
         <p class="copyraight__text">HTML Academy</p>
-        <a class="copyraight__link" href="#">
-          <img src="icons/logo_html-academy.svg" alt="Лого академии" width="27" height="24">
+        <a class="copyraight__link" href="#" aria-label="Сайт HTML академии">
+          <span class="visually-hidden">Лого академии</span>
         </a>
       </div>
     </div>
