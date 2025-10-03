@@ -45,19 +45,25 @@
   }
 
   .copyraight__link {
-    mask: url("../../icons/stack.svg#logo_html-academy");
-    display: block;
-    width: 27px;
-    height: 24px;
-    background-color: $special_grey-1;
+    &::after {
+      content: "";
+      mask: url("../../icons/stack.svg#logo_html-academy");
+      display: block;
+      width: 27px;
+      height: 24px;
+      background-color: $special_grey-1;
+    }
 
-    &:hover {
+    &:is(:hover, :focus, :focus-visible)::after {
       background-color: $accent-color;
     }
 
     &:active {
-      background-color: $accent-color;
       opacity: 0.3;
+    }
+
+    &:active::after {
+      background-color: $accent-color;
     }
   }
 }

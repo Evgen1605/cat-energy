@@ -18,4 +18,59 @@
     @include base-font($secondary-font, 400, 14px, 143%, uppercase);
     color: $basic-black;
   }
+
+  .example__slides-button {
+    border-radius: 2px;
+    width: 4px;
+    // После позиционирования поменять высоту на 100%
+    height: 256px;
+    display: block;
+    background-color: $special_grey-1;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: $basic-white;
+      border-radius: 50%;
+      border: 2px solid $special_grey-1;
+      padding: 11px 8px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      content: "";
+      mask: url("../../icons/stack.svg#slider-control-arrows") no-repeat center;
+      display: block;
+      width: 24px;
+      height: 18px;
+      background-color: $special_grey-1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:is(:hover, :focus, :focus-visible)::before {
+      border-color: $accent-color;
+    }
+
+    &:is(:hover, :focus, :focus-visible),
+    &:is(:hover, :focus, :focus-visible)::after {
+      background-color: $accent-color;
+    }
+
+    &:active,
+    &:active::after {
+      opacity: 0.6;
+    }
+  }
 }
