@@ -55,7 +55,7 @@ a {
 }
 
 .title-h3 {
-  @include base-font($primary-font, 400, 16px, 125%, uppercase);
+  @include base-font($secondary-font, 400, 16px, 125%, uppercase);
 }
 
 .main-text {

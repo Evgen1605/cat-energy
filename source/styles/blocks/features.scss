@@ -19,5 +19,27 @@
   .features__button {
     @include base-font($secondary-font, 400, 16px, 100%, uppercase);
     color: $basic-black;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      mask: url("../../icons/stack.svg#icon_arrow-right");
+      display: block;
+      width: 24px;
+      height: 12px;
+      background-color: $basic-black;
+      margin-left: 15px;
+      transition: transform 0.3s linear;
+      transform-origin: left center;
+    }
+
+    &:is(:hover, :active, :focus, :focus-visible)::after {
+      transform: scaleX(1.35);
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

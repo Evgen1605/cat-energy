@@ -1,6 +1,15 @@
 .main-header {
   background-color: $basic-white;
 
+  .main-nav__toggle {
+    background: url("../../icons/stack.svg#mobile-burger-menu") no-repeat center;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+  }
+
   .main-nav__list {
     margin: 0;
     padding: 0;
