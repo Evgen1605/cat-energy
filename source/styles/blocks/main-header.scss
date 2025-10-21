@@ -1,27 +1,20 @@
 .main-header {
   background-color: $basic-white;
 
-  .main-nav__toggle {
-    background: url("../../icons/stack.svg#mobile-burger-menu") no-repeat center;
-    display: block;
-    width: 24px;
-    height: 24px;
-    border: none;
-    cursor: pointer;
-  }
+  .main-header__wrapper {
+    padding: 13px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  .main-nav__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+    @media (min-width: $tablet-width) {
+      padding: 25px 30px 0;
+    }
 
-  .main-nav__item a {
-    @include base-font($secondary-font, 400, 20px, 100%, uppercase);
-    color: $basic-black;
+    @media (min-width: $desctop-width) {
+      max-width: $desctop-width;
+      margin: 0 auto;
+      padding: 55px 0 0;
+    }
   }
-}
-
-.main-header__wrapper {
-  padding: 13px 20px;
 }

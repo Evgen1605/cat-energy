@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энержи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
@@ -255,10 +256,13 @@
             <button class="products__button button" type="button">заказать</button>
           </li>
 
-          <li class="products__item-cards show-all">
-            <h3 class="products__title-cards title-h3">Показать еще 100500 товаров</h3>
-            <p class="show-all__text fourth-text">На самом деле вкусов гораздо больше!</p>
-            <button class="show-all__button button" type="button">показать все</button>
+          <li class="products__item-cards products__show-all">
+            <h3 class="products__title-cards title-h3 products__show-all--title">Показать еще 100500 товаров</h3>
+            <svg class="products__show-all--icon" width="30" height="30">
+              <use href="icons/stack.svg#plus"></use>
+            </svg>
+            <p class="products__show-all--text fourth-text">На самом деле вкусов гораздо больше!</p>
+            <button class="products__show-all--button button" type="button">показать все</button>
           </li>
         </ul>
       </div>
@@ -273,7 +277,7 @@
         <ul class="aspanitional-products__list">
           <!-- 1 -->
           <li class="aspanitional-products__item">
-            <h3 class="aspanitional-products__title title-h3">Сахарозаменитель</h3>
+            <h3 class="aspanitional-products__title--card title-h3">Сахарозаменитель</h3>
             <div class="aspanitional-products__info">
               <span class="aspanitional-products__quantity main-text">1 упаковка (100 г)</span>
               <span class="aspanitional-products__price main-text">200 ₽</span>
@@ -282,7 +286,7 @@
           </li>
           <!-- 2 -->
           <li class="aspanitional-products__item">
-            <h3 class="aspanitional-products__title title-h3">питьевая вода</h3>
+            <h3 class="aspanitional-products__title--card title-h3">питьевая вода</h3>
             <div class="aspanitional-products__info">
               <span class="aspanitional-products__quantity main-text">5 литров</span>
               <span class="aspanitional-products__price main-text">50 ₽</span>
@@ -291,7 +295,7 @@
           </li>
           <!-- 3 -->
           <li class="aspanitional-products__item">
-            <h3 class="aspanitional-products__title title-h3">молоко</h3>
+            <h3 class="aspanitional-products__title--card title-h3">молоко</h3>
             <div class="aspanitional-products__info">
               <span class="aspanitional-products__quantity main-text">1 литр</span>
               <span class="aspanitional-products__price main-text">100 ₽</span>
@@ -300,7 +304,7 @@
           </li>
           <!-- 4 -->
           <li class="aspanitional-products__item">
-            <h3 class="aspanitional-products__title title-h3">витамины</h3>
+            <h3 class="aspanitional-products__title--card title-h3">витамины</h3>
             <div class="aspanitional-products__info">
               <span class="aspanitional-products__quantity main-text">1 упаковка (30 г)</span>
               <span class="aspanitional-products__price main-text">300 ₽</span>
@@ -311,7 +315,7 @@
 
         <aside class="present">
           <svg class="present__logo" width="78" height="80">
-            <use href="../icons/stack.svg#present"></use>
+            <use href="icons/stack.svg#present"></use>
           </svg>
           <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
         </aside>
@@ -337,10 +341,10 @@
 
     <!-- Карта -->
     <section class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="contacts-title">приглашаем к сотрудничеству дилеров!</h2>
+      <div class="contacts__wrapper contacts__wrapper--bg-grey">
+       <h2 class="contacts-title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <address class="contacts__adress">
-          <p class="contacts__adress-text">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__adress-text">ул. Большая<br> Конюшенная, д. 19/8</p>
           <p class="contacts__adress-text">Санкт-Петербург</p>
         </address>
       </div>

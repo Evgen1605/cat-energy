@@ -1,9 +1,120 @@
+/* stylelint-disable max-nesting-depth */
 .promotions {
   .promotions__wrapper {
     padding: 0 20px 40px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 30px;
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: $desctop-width) {
+      max-width: $desctop-width;
+      padding: 0;
+      margin: 0 auto 104px;
+    }
+  }
+
+  .promotions__title {
+    margin-bottom: 32px;
+    position: relative;
+
+    &::after {
+      content: "";
+      border: 2px solid #68b738;
+      display: block;
+      width: 46%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -5%;
+    }
+
+
+    @media (min-width: $tablet-width) {
+      margin-left: 40px;
+      margin-bottom: 80px;
+
+      &::before {
+        content: "";
+        border: 2px solid #68b738;
+        display: block;
+        width: 30px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -70px;
+      }
+
+      &::after {
+        content: "";
+        border: 2px solid #68b738;
+        display: block;
+        width: 72%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -8%;
+      }
+    }
+
+    @media (min-width: $desctop-width) {
+      margin: 0 0 72px;
+
+      &::before {
+        width: 70px;
+        left: -110px;
+      }
+
+      &::after {
+        width: 84%;
+        right: -9%;
+      }
+    }
   }
 
   .promotions__description {
     @include base-font($secondary-font, 400, 16px, 150%, none);
+    margin: 0;
+    text-align: center;
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+    }
+  }
+
+  .promotions__form {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      margin: 0 32px;
+    }
+
+    @media (min-width: $desctop-width) {
+      margin: 0 230px;
+    }
+  }
+
+  .promotions__label {
+    width: 100%;
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  .promotions__input {
+    @include base-font($secondary-font, 400, 20px, 100%, uppercase);
+    width: 100%;
+    border: 1px solid $special_grey;
+    padding: 13px;
+  }
+
+  .promotions__button {
+    padding: 15px 70px;
   }
 }

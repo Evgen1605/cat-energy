@@ -1,8 +1,12 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 
+html {
+  height: 100%;
+}
+
 body {
   @include base-font($primary-font, 400, 20px, 100%, none);
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   color: $basic-text;
   background-color: $basic-white;
@@ -24,6 +28,10 @@ a {
   box-sizing: border-box;
 }
 
+picture {
+  display: contents;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -40,33 +48,67 @@ a {
 
 .title-h1 {
   @include base-font($secondary-font, 400, 36px, 100%, none);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .index-title-h2 {
   @include base-font($secondary-font, 400, 36px, 111%, none);
-}
+  margin: 0;
 
-.index-title-h3 {
-  @include base-font($secondary-font, 400, 24px, 154%, uppercase);
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 100%;
+  }
 }
 
 .title-h2 {
   @include base-font($secondary-font, 400, 24px, 100%, none);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+  }
+
+  @media (min-width: $desctop-width) {
+    font-size: 40px;
+  }
 }
 
 .title-h3 {
   @include base-font($secondary-font, 400, 16px, 125%, uppercase);
+  margin: 0;
 }
 
 .main-text {
   @include base-font($primary-font, 400, 14px, 129%, none);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 .second-text {
   @include base-font($primary-font, 400, 12px, 100%, none);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
 }
 
 .fourth-text {
   @include base-font($primary-font, 400, 12px, 133%, none);
   color: $basic-text;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 125%;
+  }
 }
