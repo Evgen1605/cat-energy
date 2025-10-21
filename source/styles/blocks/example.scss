@@ -1,6 +1,28 @@
 .example {
   background-color: $special_grey-2;
-  padding: 25px 20px 40px;
+
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient($basic-white 50%, $special_grey-2 50%);
+  }
+
+  @media (min-width: $desctop-width) {
+    background: linear-gradient($basic-white 20%, $special_grey-2 0);
+  }
+
+  .example__wrapper {
+    padding: 25px 20px 40px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 30px;
+    }
+
+    @media (min-width: $desctop-width) {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
 
   .example__weight-value,
   .example__duration-value {

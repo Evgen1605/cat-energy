@@ -1,3 +1,34 @@
 .main-nav {
   background-color: $basic-white;
+
+  .main-nav__toggle {
+    background: url("../../icons/stack.svg#mobile-burger-menu") no-repeat center;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  .main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 33px;
+    }
+  }
+
+  .main-nav__item a {
+    @include base-font($secondary-font, 400, 20px, 100%, uppercase);
+    color: $basic-black;
+  }
 }

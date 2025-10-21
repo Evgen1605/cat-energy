@@ -1,6 +1,25 @@
 .features {
   .features__wrapper {
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 30px;
+      gap: 30px;
+      margin-bottom: 45px;
+    }
+
+    @media (min-width: $desctop-width) {
+      max-width: $desctop-width;
+      margin: 0 auto;
+      flex-direction: row;
+      gap: 80px;
+      margin-bottom: 70px;
+      padding: 0;
+    }
   }
 
   .features__item {
@@ -9,7 +28,14 @@
   }
 
   .features__title {
+    @include base-font($secondary-font, 400, 24px, 154%, uppercase);
     color: $basic-black;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 100%;
+    }
   }
 
   .features__description {
